@@ -455,10 +455,17 @@
             <label  class="review-form-field-label" for="user-comment">Comment</label>
             <textarea class="review-form-comment" name="user-comment" id="user-comment" placeholder="Text input" required ></textarea>
           </div>
+
           <div class="review-form-checkbox-wrapper">
-            <input class="review-form-checkbox" id="user-privicy-policy" name="user-privicy-policy" value="true" type="checkbox" required />
-            <label  class="review-form-checkbox-label" for="user-privicy-policy">I accept the terms and conditions of the 
-             <a href="">Privacy Policy</a></label>
+            <input class="review-form-checkbox visually-hidden" id="user-privicy-policy" name="user-privicy-policy" value="true" type="checkbox" required />
+            <label  class="review-form-checkbox-label" for="user-privicy-policy">
+              <span class="review-form-own-checkbox">
+                <svg class="review-form-own-checkbox-icon" width="10" height="8" aria-label="checmark icon">
+                  <use href="./images/icons.svg#icon-chekmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the 
+             <a class="privacy-policy" href="">Privacy Policy</a></label>
           </div>
           <button class="review-submit-btn" type="submit">Send</button>
         </form>
