@@ -439,6 +439,67 @@ letter-spacing: 0.02em;
     background-color: #31D0AA;  
 } 
 
+.subscrible-prg{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    margin-left: 80px;
+}
+.form-footer-input {
+    min-width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    border-radius: 4px;
+    border: 1px solid  #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    margin-left: 80px;
+    margin-right: 24px;
+}
+.form-footer-input::placeholder {
+    color: #FFF;
+}
+.footer-form {
+    display: flex;
+}
+.btn-form-footer {
+    position: relative;
+    display: block;
+    min-width: 165px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    color: #FFF;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    transition: backdround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.btn-form-footer:hover, .btn-form-footer:focus {
+    background-color: #404bbf;   
+}
+.planer-icon-footer {
+    fill: #FFF;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
 /* ===============BACKDROP STYLES==========*/
 
 .backdrop {
@@ -469,7 +530,9 @@ letter-spacing: 0.02em;
     min-height: 584px;
     border-radius: 4px;
     background-color: #FCFCFC;
-    padding: 72px 24px;
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 
@@ -581,7 +644,7 @@ letter-spacing: 0.04em;
     width: 16px;
     height: 16px;
     border-radius: 1px;
-    border: rgba(46, 47, 66, 0.40);
+    border-color: rgba(46, 47, 66, 0.40);
     cursor: pointer;
     margin-right: 8px;
 }
@@ -598,4 +661,27 @@ letter-spacing: 0.04em;
 }
 .review-form-checkbox:checked + .review-form-checkbox-label .review-form-own-checkbox-icon {
     opacity: 1;
+}
+.review-submit-btn {
+    display: block;
+    min-width: 169px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: backdround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.review-submit-btn:hover, .review-submit-btn:focus {
+    background-color: #404bbf;
 }
