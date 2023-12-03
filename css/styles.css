@@ -469,7 +469,7 @@ letter-spacing: 0.02em;
     min-height: 584px;
     border-radius: 4px;
     background-color: #FCFCFC;
-
+    padding: 72px 24px;
 }
 
 
@@ -489,4 +489,11 @@ letter-spacing: 0.02em;
    fill: #FFFFFF;
    background-color: #404BBF;
 }
-
+.review-form-description {
+    color: #2E2F42;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
