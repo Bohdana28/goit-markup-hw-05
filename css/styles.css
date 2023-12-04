@@ -461,7 +461,7 @@ letter-spacing: 0.02em;
     padding-left: 16px;
     border-radius: 4px;
     border: 1px solid  #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #FFF;
     font-size: 12px;
     font-weight: 400;
@@ -566,7 +566,7 @@ letter-spacing: 0.02em;
 
 }
 .modal-close-btn-icon:hover, .modal-close-btn-icon:focus {
-    fill: #FFF;
+    fill: #ffffff;
 }
 .review-form-description {
     width: 360px;
@@ -579,7 +579,7 @@ letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 .review-form-field-wraper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .review-form-field-label {
     display: block;
