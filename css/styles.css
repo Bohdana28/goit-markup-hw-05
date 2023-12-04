@@ -579,7 +579,7 @@ letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 .review-form-field-wraper {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .review-form-field-label {
     display: block;
@@ -670,6 +670,7 @@ letter-spacing: 0.04em;
 .review-form-checkbox:checked + .review-form-checkbox-label > .review-form-own-checkbox {
     background-color: #404BBF;
     border: #404BBF;
+    fill: #F4F4FD;
 }
 .review-form-checkbox:focus + .review-form-checkbox-label > .review-form-own-checkbox {
     outline: 2px solid rgba(0, 0, 255, 0.5);
