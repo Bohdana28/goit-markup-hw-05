@@ -505,7 +505,7 @@ img {
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: rgb(77 90 229);
     font-weight: 500;
@@ -515,7 +515,7 @@ img {
     text-align: center;
     color: rgb(255 255 255);
     fill: rgb(255 255 255);
-    gap: 16px;
+   
 
     transition: backdround-color var(--transition-duration);
 }
@@ -523,6 +523,9 @@ img {
 .btn-form-footer:hover,
 .btn-form-footer:focus {
     background-color: rgb(49 208 170);
+}
+.planer-icon-footer {
+    margin-left: 16px;
 }
 /*=========/FOOTER==========*/
 
@@ -537,12 +540,14 @@ img {
     background: rgb(46 47 66 / 0.4);
 
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transition: opacity var(--transition-duration-and-func);
+    transition: opacity var(--transition-duration), visibility var(--transition-duration);
 }
 
 .backdrop.is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -553,10 +558,11 @@ img {
     transform: translate(-50%, -50%);
     border-radius: 4px;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: rgb(252 252 252);
-    padding: 24px;
+    padding: 72px 24px 24px;
+    transition: transform var(--transition-duration);
 }
 
 .close-btn {
@@ -576,7 +582,7 @@ img {
     line-height: 0;
     cursor: pointer;
     fill: rgb(46 47 66);
-    transition: background-color var(--transition-duration), border var(--transition-duration);
+    transition: background-color var(--transition-duration), border var(--transition-duration) fill var(--transition-duration);
 }
 
 .close-btn:hover, 
@@ -630,13 +636,14 @@ img {
     background-color: transparent;
     padding-left: 38px;
     padding-right: 16px;
+    outline: transparent;
     transition: border-color var(--transition-duration);
 
 }
 
 .form-input:focus {
     outline: none;
-    border-color: rgb(var(--accent-color));
+    border-color: rgb(77 90 229);;
 }
 
 .input-icon {
@@ -649,7 +656,11 @@ img {
 }
 
 .form-input:focus + .input-icon {
-    fill: rgb(var(--accent-color));
+    fill: rgb(77 90 229);
+}
+
+.comment-wrapper {
+    margin-bottom: 16px;
 }
 
 .form-comment {
@@ -659,11 +670,13 @@ img {
     border-radius: 4px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     padding: 8px 16px;
     background-color: transparent;
+    color: rgb(46 47 66 / 0.4);
     resize: none;
+    outline: transparent; 
     transition: border-color var(--transition-duration);
 }
 
@@ -673,7 +686,7 @@ img {
 
 .form-comment:focus {
     outline: none;
-    border-color: rgb(var(--accent-color));
+    border-color: rgb(77 90 229);
 }
 
 .form-checkbox-wrapper{
@@ -684,7 +697,7 @@ img {
 .form-checkbox-label {
    font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgb(142 143 153);
     margin-bottom: 24px; 
@@ -692,7 +705,7 @@ img {
 
 .privacy-policy {
     text-decoration: underline;
-    color: rgb(var(--accent-color));
+    color: rgb(77 90 229);;
 }
 
 .form-own-checkbox {
@@ -706,16 +719,17 @@ img {
     fill: transparent;
     cursor: pointer;
     margin-right: 8px;
-    transition: background-color var(--transition-duration), border-color var(--transition-duration), fill var(--transition-duration);
+    transition: background-color var(--transition-duration), border var(--transition-duration), fill var(--transition-duration);
 }
 .form-checkbox-input:checked + .form-checkbox-label .form-own-checkbox {
     background-color: rgb(64 75 191);
-    border-color: rgb(64 75 191);
+    border: none;
     fill: rgb(244 244 253);
 }
 
 .form-checkbox-input:focus + .form-checkbox-label .form-own-checkbox {
     outline: 2px solid rgb(0 0 255 / 0.5);
+    
 }
 
 .review-submit-btn {
