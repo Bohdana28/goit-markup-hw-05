@@ -467,5 +467,283 @@ img {
     background-color: rgb(49 208 170);
 }
 
+.footer-massege-input-container {
+    margin-left: 80px;
+    
+}
+
+.massege-form {
+    display: flex;
+    gap: 24px;
+}
+
+.form-footer-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    min-width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 0.15);
+    background-color: transparent;
+    align-items: center;
+    padding: 0 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgb(255 255 255);
+
+}
+
+.form-footer-input::placeholder {
+    color: #FFF;
+}
+
+.btn-form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background-color: rgb(77 90 229);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: rgb(255 255 255);
+    fill: rgb(255 255 255);
+    gap: 16px;
+
+    transition: backdround-color var(--transition-duration);
+}
+
+.btn-form-footer:hover,
+.btn-form-footer:focus {
+    background-color: rgb(49 208 170);
+}
 /*=========/FOOTER==========*/
+
+/*=========BACKDROP AND MODAL STYLES==========*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgb(46 47 66 / 0.4);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-duration-and-func);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    width: 408px;
+    height: 584px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(252 252 252);
+    padding: 24px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(231 233 252);
+    border: 1px solid rgb(0 0 0 / 0.10);
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    fill: rgb(46 47 66);
+    transition: background-color var(--transition-duration), border var(--transition-duration);
+}
+
+.close-btn:hover, 
+.close-btn:focus {
+   background-color: rgb(64 75 191);
+   border: none;
+   fill: rgb(255 255 255);
+}
+
+.modal-slogan {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 360px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    padding-top: 24px;
+}
+
+.review-form-field-wraper {
+    margin-bottom: 8px;
+}
+
+.form-field-labal {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgb(142 143 153);
+    margin-bottom: 4px;
+
+}
+
+.form-wrapper-input {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(46 47 66 / 0.4);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    padding-left: 38px;
+    padding-right: 16px;
+    transition: border-color var(--transition-duration);
+
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgb(var(--accent-color));
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: rgb(46 47 66);
+    transition: fill var(--transition-duration);
+}
+
+.form-input:focus + .input-icon {
+    fill: rgb(var(--accent-color));
+}
+
+.form-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgb(46 47 66 / 0.4);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+    background-color: transparent;
+    resize: none;
+    transition: border-color var(--transition-duration);
+}
+
+.form-comment::placeholder {
+    color: rgb(46 47 66 / 0.4);
+}
+
+.form-comment:focus {
+    outline: none;
+    border-color: rgb(var(--accent-color));
+}
+
+.form-checkbox-wrapper{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.form-checkbox-label {
+   font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgb(142 143 153);
+    margin-bottom: 24px; 
+}
+
+.privacy-policy {
+    text-decoration: underline;
+    color: rgb(var(--accent-color));
+}
+
+.form-own-checkbox {
+    display:  inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid rgb(46 47 66 / 0.4);
+    width: 16px;
+    height: 16px;
+    fill: transparent;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color var(--transition-duration), border-color var(--transition-duration), fill var(--transition-duration);
+}
+.form-checkbox-input:checked + .form-checkbox-label .form-own-checkbox {
+    background-color: rgb(64 75 191);
+    border-color: rgb(64 75 191);
+    fill: rgb(244 244 253);
+}
+
+.form-checkbox-input:focus + .form-checkbox-label .form-own-checkbox {
+    outline: 2px solid rgb(0 0 255 / 0.5);
+}
+
+.review-submit-btn {
+    display: block;   
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: rgb(255 255 255);
+    border-radius: 4px;
+    border: none;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: rgb(77 90 229);
+    transition: background-color var(--transition-duration);
+}
+
+.review-submit-btn:hover,
+.review-submit-btn:focus {
+    background-color: rgb(var(--accent-color));
+}
+
+
+
+/*=========/BACKDROP AND MODAL STYLES==========*/
 
