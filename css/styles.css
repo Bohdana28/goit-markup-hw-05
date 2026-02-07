@@ -503,7 +503,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    border: 1px solid rgb(0 0 0 / 0.1);
+    border: none;
     padding: 8px 24px;
     min-width: 165px;
     height: 40px;
@@ -517,14 +517,13 @@ img {
     fill: rgb(255 255 255);
    
 
-    transition: background-color var(var(--transition-duration)), border var(--transition-duration);
+    transition: background-color var(var(--transition-duration));
 }
 
 .btn-form-footer:hover,
 .btn-form-footer:focus {
     background-color: rgb(49 208 170);
-    border: none;
-     fill: rgb(255 255 255);
+    fill: rgb(255 255 255);
 }
 .planer-icon-footer {
     margin-left: 16px;
@@ -585,15 +584,19 @@ img {
     line-height: 0;
     cursor: pointer;
     fill: rgb(46 47 66);
-    transition: background-color var(--transition-duration), border var(--transition-duration) fill var(--transition-duration);
+    transition: background-color var(--transition-duration), border var(--transition-duration);
 }
 
+.close-icon {
+    transition: fill var(--transition-duration);
+}
 .close-btn:hover, 
 .close-btn:focus {
    background-color: rgb(64 75 191);
    border: none;
    fill: rgb(255 255 255);
 }
+
 
 .modal-slogan {
     margin-top: 24px;
